@@ -14,3 +14,15 @@ nav {
   max-height: 90px;
   padding: 10px 15px;
 }
+
+.bannerImg img, source {
+  position: absolute;
+  height: auto;
+  width: auto;
+  max-width: 1350px;
+  max-height: 1000px;
+  overflow: hidden;
+
+}
+
+}

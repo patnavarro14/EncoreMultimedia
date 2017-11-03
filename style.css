@@ -1,0 +1,16 @@
+nav {
+  background-color: rgb(40, 79, 112);
+  color: white;
+  overflow: hidden;
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+}
+
+.navImg img {
+  height: auto;
+  width: auto;
+  max-width: 150px;
+  max-height: 90px;
+  padding: 10px 15px;
+}

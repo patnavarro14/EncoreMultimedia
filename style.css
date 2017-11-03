@@ -1,4 +1,7 @@
 nav {
+  position: absolute;
+  top: 0;
+  right: 0;
   background-color: rgb(40, 79, 112);
   color: white;
   overflow: hidden;
@@ -17,9 +20,12 @@ nav {
 
 .bannerImg img, source {
   position: absolute;
+  top: 73px;
+  left: 0;
+  right: 0;
   height: auto;
   width: auto;
-  max-width: 1350px;
+  max-width: 1370px;
   max-height: 1000px;
   overflow: hidden;
 

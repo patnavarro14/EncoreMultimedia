@@ -3,7 +3,7 @@
 <head>
   <link rel="stylesheet" href="style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="picturefill.js"></script>
+  <script src="picturefill.js" async></script>
 </head>
 <body>
   <div class="topNav">
@@ -16,8 +16,10 @@
   </nav>
 </div>
 <div class="banner">
-<picture>
-
+<picture class="bannerImg">
+  <source media="(min-width: 800px)" srcset="MAMarriageFamilyTherapy.jpg">
+  <source media="(min-width: 645px)" srcset="MAMarriageFamilyTherapy.jpg">
+  <img src="MAMarriageFamilyTherapy.jpg" alt="MAMFT" style="width:auto;">
 </picture>
 </div>
 </body>

@@ -5,8 +5,6 @@
   background-color: rgb(40, 79, 112);
   color: white;
   overflow: hidden;
-  padding: 0px;
-  margin: 0px;
   width: 100%;
 }
 
@@ -27,21 +25,25 @@
 }
 
 .content-main h2 {
-  color: gold;
-  position: absolute;
+  font-family: "Arial", serif;
+  text-transform: uppercase;
+  color: rgb(145, 142, 111);
+  position: relative;
   width: 40%;
-  padding: 40px 45px;
+  top: 25em;
+  left: 12em;
+  padding: 10px 15px;
   margin: 20px 30px;
-  top: 560px;
-  left: 200px;
+
 }
 .content-main p {
-  position: absolute;
-  width: 40%;
-  padding: 40px 45px;
+  font-family: "Times New Roman", serif;
+  position: relative;
+  width: 35%;
+  padding: 10px 15px;
   margin: 20px 30px;
-  top: 600px;
-  left: 200px;
+  top: 32em;
+  left: 18em;
 }
 
 }

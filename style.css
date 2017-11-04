@@ -46,4 +46,38 @@
   left: 18em;
 }
 
+.side-nav {
+  position: relative;
+  background-color: rgb(46, 81, 116);
+  float: right;
+  top: 250px;
+  margin: 20px 30px;
+  padding: 20px 30px;
+}
+
+.side-nav h1 {
+  color: rgb(252, 252, 252);
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.side-nav h2 {
+  color: rgb(136, 184, 213);
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.side-nav small {
+  font-family: "Arial", serif;
+  color: rgb(136, 184, 213);
+}
+
+.button {
+  background-color: rgb(243, 176, 68);
+  border: none;
+  color: white;
+  padding: 10px 40px;
+  margin: 20px;
+  text-align: center;
+  text-decoration: none;
 }

@@ -159,3 +159,33 @@ html {
   text-align: center;
   text-decoration: none;
 }
+
+/* Sprite icons */
+.s-002-cross, .s-004-placeholder, .s-001-column, .s-003-favorite {
+  background-image: url('sprites.png');
+  background-repeat: no-repeat;
+  position: absolute;
+  margin: 1050px 275px;
+  padding: 20px 30px;
+}
+
+.s-002-cross {
+background-position: -2px -1px;
+width: 32px;
+height: 32px;
+}
+.s-004-placeholder {
+background-position: -2px -105px;
+width: 32px;
+height: 32px;
+}
+.s-001-column {
+background-position: -2px -193px;
+width: 32px;
+height: 32px;
+}
+.s-003-favorite {
+background-position: -2px -338px;
+width: 32px;
+height: 32px;
+}

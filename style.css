@@ -1,3 +1,40 @@
+html {
+  font-size:100%;
+}
+
+.container {
+    width: 100%;
+}
+
+@media (min-width: 640px) {
+  body {
+    font-size:0.8rem;
+  }
+
+  .side-nav {
+    font-size:0.8rem;
+  }
+}
+@media (min-width:960px) {
+  body {
+    font-size:1.1rem;
+  }
+
+  .side-nav {
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width:1100px) {
+  body {
+    font-size:1.2rem;
+  }
+
+  .side-nav {
+    font-size: 1.2rem;
+  }
+}
+
 /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
 
 /* Portrait and Landscape */
@@ -42,17 +79,45 @@
   padding: 10px 15px;
 }
 
-.banner img {
+/*.header-nav {
   position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: rgb(40, 79, 112);
+  color: white;
+  overflow: hidden;
+}
+
+.header-nav img {
+  position: relative;
+  max-width: 150px;
+  max-height: 90px;
+  padding: 10px 15px;
+}*/
+
+.banner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.banner img {
+  position: relative;
   top: 73px;
   left: 0;
   right: 0;
   max-width: 100%;
   max-height: 1000px;
+  width: 100%;
   overflow: hidden;
 }
 
-.banner::after {
+/*.banner::after {
   content: '';
   position: absolute;
   top: 72px;
@@ -61,7 +126,7 @@
   left: 850px;
   background-image: linear-gradient(to right,grey,white);
   opacity: .8;
-}
+}*/
 
 .content-main h2 {
   font-family: "Arial", serif;
@@ -69,8 +134,8 @@
   color: rgb(145, 142, 111);
   position: relative;
   width: 40%;
-  top: 25em;
-  left: 12em;
+  top: 22em;
+  left: 10em;
   padding: 10px 15px;
   margin: 20px 30px;
 
@@ -78,18 +143,18 @@
 .content-main p {
   font-family: "Times New Roman", serif;
   position: relative;
-  width: 35%;
+  width: 45%;
   padding: 10px 15px;
-  margin: 20px 30px;
-  top: 32em;
-  left: 18em;
+  margin: 18px 30px;
+  top: 28em;
+  left: 15em;
 }
 
 .side-nav {
   position: relative;
   background-color: rgb(46, 81, 116);
   float: right;
-  top: 250px;
+  top: 190px;
   margin: 20px 30px;
   padding: 20px 30px;
 }

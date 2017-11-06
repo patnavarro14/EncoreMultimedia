@@ -74,40 +74,14 @@ html {
 }
 
 .header-nav img {
-  max-width: 150px;
-  max-height: 90px;
-  padding: 10px 15px;
-}
-
-/*.header-nav {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  background-color: rgb(40, 79, 112);
-  color: white;
-  overflow: hidden;
-}
-
-.header-nav img {
   position: relative;
   max-width: 150px;
   max-height: 90px;
   padding: 10px 15px;
-}*/
-
-.banner {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
 }
 
 .banner img {
-  position: relative;
+  position: absolute;
   top: 73px;
   left: 0;
   right: 0;

@@ -128,36 +128,37 @@ html, body {
   color: white;
   text-align: center;
 }
+
 /* Sprite icons */
-.s-002-cross, .s-004-placeholder, .s-001-column, .s-003-favorite {
-  background-image: url('sprites.png');
+.icons8-cross, .icons8-map-pin, .icons8-good-quality, .icons8-medal {
+  background: url('sprites.png');
   background-repeat: no-repeat;
   position: absolute;
   top: 1400px;
-  left: 250px;
+  left: 200px;
   /*margin: 1050px 275px;
   padding: 20px 30px;*/
 }
 
-.s-002-cross {
-background-position: -2px -1px;
-width: 32px;
-height: 32px;
+.icons8-cross{
+background-position: 0 0;
+width: 48px;
+height: 48px;
 }
-.s-004-placeholder {
-background-position: -2px -105px;
-width: 32px;
-height: 32px;
+.icons8-map-pin{
+background-position: 0 -101px;
+width: 48px;
+height: 48px;
 }
-.s-001-column {
-background-position: -2px -193px;
-width: 32px;
-height: 32px;
+.icons8-good-quality{
+background-position: 0 -300px;
+width: 48px;
+height: 48px;
 }
-.s-003-favorite {
-background-position: -2px -338px;
-width: 32px;
-height: 32px;
+.icons8-medal{
+background-position: 0 -199px;
+width: 48px;
+height: 48px;
 }
 
 .content_main_2 {
@@ -602,17 +603,17 @@ height: 32px;
 @media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
 
   html, body {
-    min-width: 768px;
+    max-width: 1024px;
     width: 100%;
-    height: auto;
+    height: 100%;;
   }
 
   .side_nav {
     position: absolute;
     background-color: rgb(46, 81, 116);
     top: 365px;
-    left: 90px;
-    padding: 40px 150px;
+    left: 85px;
+    padding: 40px 200px;
     margin: 0 auto;
     height: auto;
   }
@@ -624,117 +625,137 @@ height: 32px;
   .content_main h2 {
     position: relative;
     top: 1000px;
-    left: 95px;
+    left: 40px;
+    font-size: 1em;
   }
 
   .content_main p {
     position: relative;
     top: 920px;
-    left: 95px;
-    width: 68%;
+    left: 40px;
+    width: 70%;
+  }
+
+  .content_vid #vid_1 {
+    width: 250px;
+    height: 255px;
+    top: 900px;
+    left: 85px;
+  }
+
+  .content_vid #vid_2 {
+    width: 250px;
+    height: 255px;
+    top: 900px;
+    left: 110px;
   }
 
   /* Sprite icons */
-  .s-002-cross, .s-004-placeholder, .s-001-column, .s-003-favorite {
-    background-image: url('sprites.png');
+    .content_main_2 .icons8-cross{
+    background: url('sprites.png');
     background-repeat: no-repeat;
-    position: relative;
-    top: 1000px;
-    left: 130px;
-    margin: 0px 0px;
-    padding: 0px 0px;
+    background-position: 0 0;
+    width: 48px;
+    height: 48px;
+    position: absolute;
+    top: 100px;
+
   }
 
   .content_main_2 #christian_h2 {
     position: relative;
-    top: 950px;
-    left: 220px;
-    margin: 0;
-    padding: 0;
+    top: 750px;
+    left: 100px;
+    font-size: 1em;
   }
 
   .content_main_2 #christian_p {
     position: relative;
-    top: 950px;
-    left: 220px;
-    width: 68%;
+    top: 755px;
+    left: 100px;
+    width: 80%;
+    font-size: 0.75em;
   }
 
   .content_main_2 #location_h2 {
     position: relative;
-    top: 970px;
-    left: 220px;
-    width: 55%;
+    top: 780px;
+    left: 100px;
+    width: 80%;
+    font-size: 1em;
   }
 
   .content_main_2 #location_p {
     position: relative;
-    top: 975px;
-    left: 220px;
-    width: 58%;
+    top: 790px;
+    left: 100px;
+    width: 80%;
+    font-size: 0.75em;
   }
 
   .content_main_2 #degree_h2 {
     position: relative;
-    top: 1000px;
-    left: 220px;
-    width: 55%;
+    top: 820px;
+    left: 100px;
+    width: 80%;
+    font-size: 1em;
   }
 
   .content_main_2 #degree_p {
     position: relative;
-    top: 1000px;
-    left: 220px;
-    width: 58%;
+    top: 830px;
+    left: 100px;
+    width: 80%;
+    font-size: 0.75em;
   }
 
   .content_main_2 #programs {
     position: relative;
-    top: 1000px;
-    left: 220px;
-    width: 7%
+    top: 830px;
+    left: 100px;
+    width: 18%;
   }
 
   .content_main_2 #excellence_h2 {
     position: relative;
-    top: 1055px;
-    left: 220px;
-    width: 55%;
+    top: 870px;
+    left: 100px;
+    width: 80%;
   }
 
   .content_main_2 #excellence_p {
     position: relative;
-    top: 1060px;
-    left: 220px;
-    width: 58%;
+    top: 880px;
+    left: 100px;
+    width: 80%;
   }
 
   .content_main_2 #staff {
     position: relative;
-    top: 1060px;
-    left: 200px;
-    width: 55%;
+    top: 900px;
+    left: 80px;
+    width: 80%;
   }
 
   .content_main_2 #our_staff {
     position: relative;
-    top: 1065px;
-    left: 220px;
-    width: 7%;
+    top: 900px;
+    left: 100px;
+    width: 18%;
   }
 
   .content_slideshow {
     position: relative;
-    top: 800px;
-    left: 300px;
+    top: 1100px;
+    left: 100px;
   }
 
   .content_slideshow .mySlides h2 {
     position: relative;
-    left: 70px;
+    left: 40px;
     color: rgb(138, 127, 90);
     font-size: 1em;
-    width: 70%;
+    width: 90%;
   }
 
   .content_slideshow .mySlides p {

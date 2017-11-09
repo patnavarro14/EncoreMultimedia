@@ -599,21 +599,26 @@ height: 32px;
   ##Screen = B/w 768px to 1024px
 */
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
 
   html, body {
-    padding: 0 auto;
-    margin: 0 auto;
+    min-width: 768px;
+    width: 100%;
+    height: auto;
   }
 
   .side_nav {
     position: absolute;
     background-color: rgb(46, 81, 116);
-    float: left;
-    top: 354px;
-    left: 0px;
-    padding: 200px 400px;
-    margin: 100px 200px;
+    top: 365px;
+    left: 90px;
+    padding: 40px 150px;
+    margin: 0 auto;
+    height: auto;
+  }
+
+  .side_nav h2 {
+    display: none;
   }
 
   .content_main h2 {

@@ -2,11 +2,16 @@
 html, body {
   width: 1000px;
   height: auto;
-  min-width: 1000px;
+  max-width: 1000px;
   min-height: 100%;;
   font-size:100%;
+  padding: 0;
+  margin: 0;
 }
 
+.container-full {
+  width: 100%;
+}
 
 .header-nav {
   position: absolute;
@@ -290,6 +295,11 @@ height: 32px;
   left: 150px;
 }
 
+.content_slideshow #dots {
+  position: relative;
+  left: 185px;
+}
+
 /* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
@@ -407,16 +417,18 @@ height: 32px;
     min-width: 1025px;
     min-height: 1025px;
     font-size:100%;
+    padding: 0;
+    margin: 0 auto;
   }
 
   .side_nav {
     position: absolute;
     background-color: rgb(46, 81, 116);
     top: 400px;
-    left: 775px;
+    left: 700px;
     float: right;
     margin: 35px 40px;
-    padding: 20px 30;
+    padding: 20px 30px;
   }
 
   .side_nav h1 {
@@ -519,7 +531,8 @@ height: 32px;
     position: relative;
     top: 570px;
     left: 140px;
-    width: 7%
+    font-size: 0.7em;
+    width: 10%
   }
 
   .content_main_2 #excellence_h2 {
@@ -549,9 +562,37 @@ height: 32px;
     position: relative;
     top: 630px;
     left: 140px;
-    width: 7%;
+    border-radius: 25px;
+    font-size: 0.7em;
+    width: 10%;
   }
 
+  .content_slideshow {
+    position: relative;
+    margin-top: 800px;
+    margin-left: 100px;
+    margin-right: 300px;
+  }
+
+  .content_slideshow .mySlides h2 {
+    position: relative;
+    color: rgb(138, 127, 90);
+    font-size: 1em;
+    width: 60%;
+  }
+
+  .content_slideshow .mySlides p {
+    position: relative;
+    left: 125px;
+    color: rgb(25, 111, 159);
+    font-size: 0.8em;
+  }
+
+  .content_slideshow .mySlides small {
+    position: relative;
+    left: 30px;
+    color: rgb(25, 111, 159);
+  }
 
 }
 
@@ -561,6 +602,12 @@ height: 32px;
 */
 
 @media (min-width: 768px) and (max-width: 1024px) {
+
+  html, body {
+    padding: 0 auto;
+    margin: 0 auto;
+  }
+
   .side_nav {
     position: absolute;
     background-color: rgb(46, 81, 116);
@@ -591,14 +638,16 @@ height: 32px;
     position: relative;
     top: 1000px;
     left: 130px;
-    /*margin: 1050px 275px;
-    padding: 20px 30px;*/
+    margin: 0px 0px;
+    padding: 0px 0px;
   }
 
   .content_main_2 #christian_h2 {
     position: relative;
     top: 950px;
     left: 220px;
+    margin: 0;
+    padding: 0;
   }
 
   .content_main_2 #christian_p {
@@ -671,7 +720,38 @@ height: 32px;
     width: 7%;
   }
 
+  .content_slideshow {
+    position: relative;
+    margin-top: 1000px;
+    margin-left: 20px;
+    margin-right: 270px;
+  }
 
+  .content_slideshow .mySlides h2 {
+    position: relative;
+    left: 70px;
+    color: rgb(138, 127, 90);
+    font-size: 1em;
+    width: 70%;
+  }
+
+  .content_slideshow .mySlides p {
+    position: relative;
+    left: 125px;
+    color: rgb(25, 111, 159);
+    font-size: 0.8em;
+  }
+
+  .content_slideshow .mySlides small {
+    position: relative;
+    left: 35px;
+    color: rgb(25, 111, 159);
+  }
+
+  .content_slideshow #dots {
+    position: relative;
+    left: 175px;
+  }
 }
 
 /*
@@ -684,148 +764,217 @@ height: 32px;
   html, body {
     width: 768px;
     height: auto;
+    margin: 0 auto;
+    padding: 0;
 
+  }
+  body {
+    margin: 0;
+    padding: 0;
   }
 
   .side_nav {
-    position: absolute;
+    position: relative;
     background-color: rgb(46, 81, 116);
-    top: 210px;
-    left: 0px;
-    margin: 150px 100px;
-    padding: 150px 200px;
+    top: 20px;
+    float: right;
+    left: 45px;
+    margin: 5px 10px;
+    padding: 30px 30px;
   }
 
   .side_nav h1 {
-    font-size: 1.5em;
-    margin-top: -100px;
+    font-size: 1.2em;
+    margin-top: -10px;
   }
 
   .side_nav h2 {
-    display: none;
+    font-size: 1em;
   }
 
-  .side_nav #submit {
-    margin-left: 20px;
+  .side_nav small {
+    font-size: 0.8em;
+  }
+
+  .content_main {
+    position: absolute;
+    width: auto;
+    float: left;
   }
 
   .content_main h2 {
     position: relative;
-    top: 900px;
-    left: 50px;
+    top: 475px;
+    left: 0px;
     font-size: 1em;
   }
 
   .content_main p {
     position: relative;
-    top: 820px;
-    left: 50px;
-    width: 55%;
+    top: 400px;
+    left: 0px;
+    font-size: 0.8em;
+    width: 45%;
+  }
+
+  .content_vid {
+    padding: 0px 0px;
   }
 
   .content_vid #vid_1 {
     position: relative;
-    top: 850px;
-    left: 95px;
+    top: 600px;
+    left: 0px;
     display: inline;
-    width: 280px;
-    height: 300px;
+    width: 250px;
+    height: 370px;
   }
 
   .content_vid #vid_2 {
     position: relative;
-    top: 850px;
+    top: 600px;
+    left: 0px;
     display: inline;
-    width: 280px;
-    height: 300px;
+    width: 250px;
+    height: 370px;
   }
+
   /* Sprite icons */
   .s-002-cross, .s-004-placeholder, .s-001-column, .s-003-favorite {
     background-image: url('sprites.png');
     background-repeat: no-repeat;
     position: relative;
     top: 1060px;
-    left: 85px;
-    /*margin: 1050px 275px;
-    padding: 20px 30px;*/
+    left: 0px;
+  }
+
+  .content_main_2 {
+    padding: 0;
+    margin: 0;
   }
 
   .content_main_2 #christian_h2 {
     position: relative;
-    margin-top: 130px;
-    left: 150px;
-    width: 50%;
+    margin: 0px 0px;
+    top: 650px;
+    left: 30px;
+    width: 55%;
+    font-size: 1em;
   }
 
   .content_main_2 #christian_p {
     position: relative;
-    top: 950px;
-    left: 150px;
-    width: 58%;
+    top: 650px;
+    left: 30px;
+    width: 55%;
+    font-size: 0.8em;
   }
 
   .content_main_2 #location_h2 {
     position: relative;
-    top: 970px;
-    left: 150px;
+    top: 670px;
+    left: 30px;
     width: 55%;
+    font-size: 1em;
   }
 
   .content_main_2 #location_p {
     position: relative;
-    top: 975px;
-    left: 150px;
-    width: 58%;
+    top: 670px;
+    left: 30px;
+    width: 55%;
+    font-size: 0.8em;
   }
 
   .content_main_2 #degree_h2 {
     position: relative;
-    top: 1000px;
-    left: 150px;
+    top: 720px;
+    left: 30px;
     width: 55%;
+    font-size: 1em;
   }
 
   .content_main_2 #degree_p {
     position: relative;
-    top: 1000px;
-    left: 150px;
-    width: 58%;
+    top: 720px;
+    left: 30px;
+    width: 55%;
+    font-size: 0.8em;
   }
 
   .content_main_2 #programs {
     position: relative;
-    top: 1000px;
-    left: 150px;
-    width: 7%
+    top: 720px;
+    left: 30px;
+    width: 15%;
+    font-size: 0.65em;
   }
 
   .content_main_2 #excellence_h2 {
     position: relative;
-    top: 1055px;
-    left: 150px;
+    top: 775px;
+    left: 30px;
     width: 55%;
+    font-size: 1em;
   }
 
   .content_main_2 #excellence_p {
     position: relative;
-    top: 1060px;
-    left: 150px;
-    width: 58%;
+    top: 785px;
+    left: 30px;
+    width: 55%;
+    font-size: 0.8em;
   }
 
   .content_main_2 #staff {
     position: relative;
-    top: 1060px;
-    left: 130px;
+    top: 785px;
+    left: 8px;
     width: 55%;
+    font-size: 0.8em;
   }
 
   .content_main_2 #our_staff {
     position: relative;
-    top: 1065px;
-    left: 150px;
-    width: 7%;
+    top: 785px;
+    left: 30px;
+    width: 15%;
+    font-size: 0.65em;
   }
+
+  .content_slideshow {
+    position: relative;
+    margin-top: 1000px;
+    margin-left: 20px;
+    margin-right: 270px;
+  }
+
+  .content_slideshow .mySlides h2 {
+    position: relative;
+    left: 70px;
+    color: rgb(138, 127, 90);
+    font-size: 1em;
+    width: 70%;
+  }
+
+  .content_slideshow .mySlides p {
+    position: relative;
+    left: 125px;
+    color: rgb(25, 111, 159);
+    font-size: 0.8em;
+  }
+
+  .content_slideshow .mySlides small {
+    position: relative;
+    left: 35px;
+    color: rgb(25, 111, 159);
+  }
+
+  .content_slideshow #dots {
+    position: relative;
+    left: 175px;
+  }
+
 }
 
 /*
@@ -838,10 +987,10 @@ height: 32px;
     position: absolute;
     background-color: rgb(46, 81, 116);
     float: left;
-    top: 354px;
+    top: 310px;
     left: 0px;
-    padding: 100px 250px;
-    margin: 100px 150px;
+    padding: 100px 200px;
+    margin: 40px 75px;
   }
 
   .content_main h2 {
@@ -855,6 +1004,7 @@ height: 32px;
     top: 920px;
     left: 95px;
     width: 68%;
+
   }
 
   /* Sprite icons */

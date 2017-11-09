@@ -1,7 +1,7 @@
 
 html, body {
   width: 1000px;
-  height: auto;
+  height: 100%;
   max-width: 1000px;
   min-height: 100%;;
   font-size:100%;
@@ -9,9 +9,6 @@ html, body {
   margin: 0;
 }
 
-.container-full {
-  width: 100%;
-}
 
 .header-nav {
   position: absolute;
@@ -37,9 +34,6 @@ html, body {
 }
 .banner img {
   position: relative;
-  /*top: 73px;
-  left: 0;
-  right: 0;*/
   max-width: 100%;
   max-height: 1000px;
   width: 100%;
@@ -91,12 +85,13 @@ html, body {
   left: 100px;
 }
 .side_nav {
-  position: relative;
+  position: absolute;
   background-color: rgb(46, 81, 116);
   top: 200px;
   left: 400px;
   margin: 10px 20px;
   padding: 20px 30px;
+  height: 100%;
 }
 
 .side_nav h1 {
@@ -165,6 +160,10 @@ width: 32px;
 height: 32px;
 }
 
+.content_main_2 {
+  position: absolute;
+  width: 75%;
+}
 .content_main_2 #christian_h2 {
   position: relative;
   top: 650px;
@@ -263,11 +262,11 @@ height: 32px;
 
 /* Slideshow container */
 .content_slideshow {
-  max-width: 1000px;
+  max-width: 500px;
   position: relative;
-  margin-top: 1000px;
-  margin-left: 300px;
-  margin-right: 200px;
+  top: 1000px;
+  left: 300px;
+
 }
 
 .content_slideshow .mySlides h2 {
@@ -569,9 +568,8 @@ height: 32px;
 
   .content_slideshow {
     position: relative;
-    margin-top: 800px;
-    margin-left: 100px;
-    margin-right: 300px;
+    top: 800px;
+    left: 150px;
   }
 
   .content_slideshow .mySlides h2 {
@@ -722,9 +720,8 @@ height: 32px;
 
   .content_slideshow {
     position: relative;
-    margin-top: 1000px;
-    margin-left: 20px;
-    margin-right: 270px;
+    top: 800px;
+    left: 300px;
   }
 
   .content_slideshow .mySlides h2 {
@@ -944,9 +941,9 @@ height: 32px;
 
   .content_slideshow {
     position: relative;
-    margin-top: 1000px;
-    margin-left: 20px;
-    margin-right: 270px;
+    top: 800px;
+    left: 0px;
+
   }
 
   .content_slideshow .mySlides h2 {

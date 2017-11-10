@@ -24,6 +24,7 @@ html, body {
   max-width: 150px;
   max-height: 90px;
   padding: 10px 15px;
+
 }
 
 .banner {
@@ -32,6 +33,7 @@ html, body {
   left: 0;
   right: 0;
 }
+
 .banner img {
   position: relative;
   max-width: 100%;
@@ -40,12 +42,12 @@ html, body {
   overflow: hidden;
 }
 
-/*.banner::after {
+ /*.banner::after{
   content: '';
   position: absolute;
-  top: 72px;
+  top: 0px;
+  bottom: 273px;
   right: 0;
-  bottom: 74px;
   left: 850px;
   background-image: linear-gradient(to right,grey,white);
   opacity: .8;
@@ -446,14 +448,14 @@ height: 48px;
 
   .content_main h2 {
     position: relative;
-    top: 475px;
+    top: 500px;
     left: 95px;
     font-size: 1em;
   }
 
   .content_main p {
     position: relative;
-    top: 400px;
+    top: 430px;
     left: 95px;
     width: 50%;
     font-size: 0.8em;
@@ -800,21 +802,24 @@ height: 48px;
     position: absolute;
     background-color: rgb(46, 81, 116);
     top: 400px;
-    left: 700px;
+    left: 650px;
     margin: 5px 10px;
-    padding: 30px 30px;
+    padding: 30px 20px;
   }
 
   .side_nav h1 {
+    position: relative;
     font-size: 1.2em;
     margin-top: -10px;
   }
 
   .side_nav h2 {
+    position: relative;
     font-size: 1em;
   }
 
   .side_nav small {
+    position: relative;
     font-size: 0.8em;
   }
 
@@ -1012,7 +1017,7 @@ height: 48px;
     height: auto;
   }
   .side_nav {
-    position: absolute;
+    position: relative;
     background-color: rgb(46, 81, 116);
     background-position: center;
     float: left;
@@ -1201,6 +1206,13 @@ height: 48px;
 */
 
 @media (min-width: 320px) and (max-width: 480px) {
+
+  html, body {
+    max-width: 480px;
+    width: 100%;
+    height: auto;
+  }
+
   .side_nav {
     position: relative;
     background-color: rgb(46, 81, 116);
@@ -1210,6 +1222,164 @@ height: 48px;
     margin: 10px 20px;
     padding: 20px 30px;
   }
+
+  .banner h1, h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+  }
+
+  .banner h1 {
+    font-size: 2em;
+    letter-spacing: 2px;
+  }
+  .banner hr {
+    width: 20%;
+  }
+  .side_nav {
+    position: absolute;
+    top: 500px;
+    left: 28px;
+    padding: 50px 100px;
+    height: 30%;
+  }
+
+  .side_nav h2 {
+    display: none;
+  }
+
+
+  .content_main h2 {
+    position: relative;
+    top: 1100px;
+    left: -20px;
+  }
+
+  .content_main p {
+    position: relative;
+    top: 1050px;
+    left: 0px;
+    width: 75%;
+  }
+
+  .content_vid #vid_1 {
+    position: absolute;
+    top: 1500px;
+    left: 35px;
+  }
+
+  .content_vid #vid_2 {
+    position: absolute;
+    top: 1800px;
+    left: 35px;
+  }
+
+  .content_main_2 {
+    position: absolute;
+    top: 1600px;
+    width: 90%;
+  }
+
+    /*.icons8-cross img #icons {
+      background-image: url('sprites.png');
+      background-position: 0px 0px;
+      width: 48px;
+      height: 48px;
+    }*/
+
+
+    /*width: 48px;
+    height: 48px;
+    position: absolute;
+    background-position: 0 0;
+    top: 800px;
+    left:35px;
+  }*/
+  .content_main_2 #christian_h2{
+    left: 30px;
+  }
+
+  .content_main_2 #christian_p {
+    left: 80px;
+    width: 80%;
+  }
+
+  .content_main_2 #location_h2 {
+    left: 70px;
+  }
+
+  .content_main_2 #location_p {
+    left: 80px;
+    width: 80%;
+  }
+
+  .content_main_2 #degree_h2 {
+    left: 30px;
+  }
+
+  .content_main_2 #degree_p {
+    left: 80px;
+    width: 80%;
+  }
+
+  .content_main_2 #programs {
+    left: 80px;
+    width: 25%;
+  }
+
+  .content_main_2 #excellence_h2 {
+    left: 30px;
+  }
+
+  .content_main_2 #excellence_p {
+    left: 75px;
+    width: 80%;
+  }
+
+  .content_main_2 #staff {
+    left: 55px;
+    width: 80%;
+  }
+
+  .content_main_2 #our_staff {
+    left: 75px;
+    width: 25%;
+  }
+
+
+    .content_slideshow {
+      position: relative;
+      top: 900px;
+      left: 0px;
+
+    }
+
+    .content_slideshow .mySlides h2 {
+      position: relative;
+      left: 70px;
+      color: rgb(138, 127, 90);
+      font-size: 1em;
+      width: 75%;
+    }
+
+    .content_slideshow .mySlides p {
+      position: relative;
+      left: 125px;
+      color: rgb(25, 111, 159);
+      font-size: 0.8em;
+    }
+
+    .content_slideshow .mySlides small {
+      position: relative;
+      left: 65px;
+      color: rgb(25, 111, 159);
+      font-size: 0.75em;
+    }
+
+    .content_slideshow #dots {
+      position: relative;
+      left: 175px;
+    }
 }
 
 /** {
